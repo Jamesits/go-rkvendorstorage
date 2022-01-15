@@ -1,10 +1,24 @@
 # go-rkvendorstorage
 
-Pure Golang implementation of Rockchip `rknand`'s vendor storage interface.
+A pure Golang implementation of Rockchip `rknand` vendor storage interface.
 
 ## Usage
 
-See [read_test.go](/read_test.go) for examples.
+```go
+package main
+
+import (
+	"fmt"
+	"github.com/jamesits/go-rkvendorstorage"
+)
+
+func main() {
+	size, data, err := rkvendorstorage.Read(rkvendorstorage.IDVendorSN)
+	fmt.Printf("size=%d, data=%s, err=%s\n", size, string(data), err)
+}
+```
+
+See [read_test.go](/read_test.go) for more examples.
 
 ## Acknowledgements
 
