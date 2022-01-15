@@ -2,6 +2,8 @@
 
 A pure Golang implementation of Rockchip `rknand` vendor storage interface.
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/jamesits/go-rkvendorstorage.svg)](https://pkg.go.dev/github.com/jamesits/go-rkvendorstorage)
+
 ## Usage
 
 ```go
@@ -29,4 +31,4 @@ The following articles are referenced during the development of this library:
 - [Golang ioctl sample](https://gist.github.com/tetsu-koba/33b339d26ac9c730fb09773acf39eac5)
 - [Another random ioctl sample](https://go.dev/play/p/rq8pJGL3ey)
 
-Thank [Qingping](https://www.qingping.co/) for sponsoring an RK3128 development board.
+Thank [Qingping](https://www.qingping.co/) for sponsoring some RK3128 development boards.
