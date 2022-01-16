@@ -11,17 +11,19 @@ const RequestTag = 0x56524551
 // The value is hardcoded differently in different documentations, so a reasonable default is selected.
 const RequestMaxSize = 1024
 
-// RequestBufferMaxSize is the size of the buffer used for ioctl.
-const RequestBufferMaxSize = RequestMaxSize + 8
+// RequestBufferAllocationSize is the size of the buffer used for ioctl.
+const RequestBufferAllocationSize = RequestMaxSize + 8
 
 // IORequestRead is used during a read request.
 // To calculate on the fly:
 //  var IORequestRead = _IOW('v', 0x01, 4)
+// The value is pre-calculated to save some cycles.
 const IORequestRead uintptr = 0x40047601
 
 // IORequestWrite is used during a write request.
 // To calculate on the fly:
 //  var IORequestWrite = _IOW('v', 0x02, 4)
+// The value is pre-calculated to save some cycles.
 const IORequestWrite uintptr = 0x40047602
 
 // These are pre-defined keys.

@@ -8,4 +8,5 @@
 //	    uint16 len;
 //	    uint8 data[1024];
 //  };
+//
 package rkvendorstorage

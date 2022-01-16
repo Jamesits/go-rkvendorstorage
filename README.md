@@ -22,6 +22,14 @@ func main() {
 
 See [read_test.go](/read_test.go) for more examples.
 
+## Caveats
+
+- Linux is the only OS supported for now
+- An artificial 1024-byte limit is applied to the read/write buffer
+- Endianness is hardcoded as little endian
+
+If you have valid use cases that exceed the current limitations, please raise an issue.
+
 ## Acknowledgements
 
 The following articles are referenced during the development of this library:
